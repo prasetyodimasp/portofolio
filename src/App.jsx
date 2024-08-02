@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Dimas from "./assets/Dimas.png";
 import Male from "./assets/Malefashion.png";
+import ArrowUp from "./assets/arrow-up.svg";
 import CSS from "./assets/css.svg";
 import GITHUB from "./assets/github.png";
 import GMAIL from "./assets/gmail.svg";
@@ -14,9 +16,31 @@ import TAILWIND from "./assets/tailwind.svg";
 import WA from "./assets/whatsapp.svg";
 
 function App() {
+    const [scrolling, setScrolling] = useState(false);
+
+    const onPageScroll = () => {
+        if (window.pageYOffset > 200) {
+            setScrolling(true);
+        } else {
+            setScrolling(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", onPageScroll);
+        return () => {
+            window.removeEventListener("scroll", onPageScroll);
+        };
+    }, []);
+
     return (
         <div className="max-w-4xl m-auto relative">
-            <nav className="fixed left-0 right-0 top-0 z-20" id="home">
+            <nav
+                className={`${
+                    scrolling ? "border-b border-gray-900" : ""
+                }  fixed left-0 right-0 top-0 z-20`}
+                id="home"
+            >
                 <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
                     <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
                         <div>
@@ -362,6 +386,16 @@ function App() {
                     </p>
                 </div>
             </footer>
+            {scrolling && (
+                <button
+                    className="fixed block right-8 bottom-0 w-24"
+                    onClick={() => {
+                        window.scrollTo(0, 0);
+                    }}
+                >
+                    <img src={ArrowUp} />
+                </button>
+            )}
         </div>
     );
 }
