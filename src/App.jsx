@@ -1,5 +1,6 @@
 import "./App.css";
 import Dimas from "./assets/Dimas.png";
+import Male from "./assets/Malefashion.png";
 import CSS from "./assets/css.svg";
 import GITHUB from "./assets/github.png";
 import GMAIL from "./assets/gmail.svg";
@@ -7,6 +8,7 @@ import HTML from "./assets/html.svg";
 import Instagram from "./assets/instagram.svg";
 import JAVASCRIPT from "./assets/javascript.svg";
 import LinkedIn from "./assets/linkedin.svg";
+import Porto from "./assets/portofolio.png";
 import REACT from "./assets/react.svg";
 import TAILWIND from "./assets/tailwind.svg";
 
@@ -223,6 +225,57 @@ function App() {
                                 <p class="font-semibold mt-3 text-[#cccccc]">
                                     GITHUB
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Projects section */}
+                <section id="portofolio">
+                    <div className="container m-auto px-4 sm:py-12">
+                        <h2 className="text-2xl font-semibold text-blue-500">
+                            Portofolio
+                        </h2>
+                        <div className="flex flex-col sm:flex-row gap-5 mt-10">
+                            <div className="border border-gray-500 rounded-md p-5 flex-1">
+                                <img src={Male} className="w-100 h-auto" />
+                                <h3 className="text-lg font-semibold mt-5">
+                                    Membuat Halaman Checkout
+                                </h3>
+                                <p className="text-gray-400 text-sm mt-2">
+                                    Website Belanja checkout yang saya buat
+                                    menggunakan Tailwind CSS dan React Js dann
+                                    Typescript.
+                                </p>
+                                <div className="flex mt-5 gap-4">
+                                    <button className="px-4 py-2 border rounded-2xl hover:border-blue-500 hover:text-blue-500">
+                                        <a
+                                            href="https://github.com/KEL6-HS/backend-final-project"
+                                            target="_blank"
+                                        >
+                                            Github
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="border border-gray-500 rounded-md p-5 flex-1">
+                                <img src={Porto} className="w-full h-auto" />
+                                <h3 className="text-lg font-semibold mt-5">
+                                    Portofolio Website Pribadi
+                                </h3>
+                                <p className="text-gray-400 text-sm mt-2">
+                                    Portofolio yang saya buat menggunakan
+                                    Tailwind CSS dan React Js.
+                                </p>
+                                <div className="flex gap-4 mt-5">
+                                    <button className="px-4 py-2 border rounded-2xl hover:border-blue-500 hover:text-blue-500">
+                                        <a
+                                            href="https://github.com/KEL6-HS/backend-final-project"
+                                            target="_blank"
+                                        >
+                                            Github
+                                        </a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
