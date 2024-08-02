@@ -11,6 +11,7 @@ import LinkedIn from "./assets/linkedin.svg";
 import Porto from "./assets/portofolio.png";
 import REACT from "./assets/react.svg";
 import TAILWIND from "./assets/tailwind.svg";
+import WA from "./assets/whatsapp.svg";
 
 function App() {
     return (
@@ -316,6 +317,51 @@ function App() {
                     </div>
                 </section>
             </main>
+            <footer id="saya">
+                <div className="flex flex-col gap-12 justify-center items-center mt-auto py-20">
+                    <h2 className="text-2xl text-blue-500 font-semibold">
+                        Hubungi Saya
+                    </h2>
+                    <p className="text-sm font-semibold text-gray-500">
+                        Kamu dapat menghubungi saya dari sini 👇🏻
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-5 md:gap-5 ">
+                        <a
+                            href="mailto:prasetyodimasp2711@gmail.com"
+                            target="_blank"
+                        >
+                            <img src={GMAIL} className="w-10" />
+                        </a>
+                        <a href="https://wa.me/085742724303" target="_blank">
+                            <img src={WA} className="w-10" />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/samiiddddd"
+                            target="_blank"
+                        >
+                            <img src={Instagram} className="w-10" />
+                        </a>
+                        <a
+                            href="https://github.com/prasetyodimasp"
+                            target="_blank"
+                        >
+                            <img src={GITHUB} className="w-10" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/prasetyodimasp/"
+                            target="_blank"
+                        >
+                            <img src={LinkedIn} className="w-10" />
+                        </a>
+                    </div>
+
+                    <p className="font-medium text-sm text-gray-500 text-center mb-0">
+                        &copy; 2024 Hak Cipta dengan &nbsp;
+                        <a className="text-blue-500">Prasetyo Dimas Pramono</a>
+                        &nbsp; Menggunakan Tailwind CSS dan React JS.
+                    </p>
+                </div>
+            </footer>
         </div>
     );
 }
