@@ -1,9 +1,14 @@
 import "./App.css";
 import Dimas from "./assets/Dimas.png";
+import CSS from "./assets/css.svg";
 import GITHUB from "./assets/github.png";
 import GMAIL from "./assets/gmail.svg";
+import HTML from "./assets/html.svg";
 import Instagram from "./assets/instagram.svg";
+import JAVASCRIPT from "./assets/javascript.svg";
 import LinkedIn from "./assets/linkedin.svg";
+import REACT from "./assets/react.svg";
+import TAILWIND from "./assets/tailwind.svg";
 
 function App() {
     return (
@@ -148,6 +153,76 @@ function App() {
                                     src={Dimas}
                                     className="relative z-10 w-[280px] m-auto sm:w-[650px]"
                                 />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Skills*/}
+                <section id="skills">
+                    <div className="container mt-8 px-4 py-12">
+                        <h2 className="text-2xl font-semibold text-blue-500">
+                            Skllis
+                        </h2>
+                        <div className="flex flex-col sm:flex-row gap-10 mt-10">
+                            <div class="flex flex-col items-center">
+                                <img
+                                    src={HTML}
+                                    alt="html icon"
+                                    class="w-24 h-24"
+                                />
+                                <p class="font-semibold mt-3 text-[#cccccc]">
+                                    HTML
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img
+                                    src={CSS}
+                                    alt="css icon"
+                                    class="w-24 h-24"
+                                />
+                                <p class="font-semibold mt-3 text-[#cccccc]">
+                                    CSS
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img
+                                    src={TAILWIND}
+                                    alt="tailwind icon"
+                                    class="w-24 h-24"
+                                />
+                                <p class="font-semibold mt-3 text-[#cccccc]">
+                                    TAILWIND
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img
+                                    src={JAVASCRIPT}
+                                    alt="javascript icon"
+                                    class="w-24 h-24"
+                                />
+                                <p class="font-semibold mt-3 text-[#cccccc]">
+                                    JAVASCRIPT
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img
+                                    src={REACT}
+                                    alt="react icon"
+                                    class="w-24 h-24"
+                                />
+                                <p class="font-semibold mt-3 text-[#cccccc]">
+                                    REACT.JS
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img
+                                    src={GITHUB}
+                                    alt="github icon"
+                                    class="w-24 h-24"
+                                />
+                                <p class="font-semibold mt-3 text-[#cccccc]">
+                                    GITHUB
+                                </p>
                             </div>
                         </div>
                     </div>
